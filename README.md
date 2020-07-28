@@ -1,4 +1,4 @@
-# 🏹17wanxiaoCheckin-Actions
+# 🛴17wanxiaoCheckin-Actions
 
 
 
@@ -6,9 +6,11 @@
 >
 > 每天早上六点自动打卡，微信推送打卡信息
 >
-> 图床使用：SM.MS -- https://sm.ms/ -- 图片过多可能加载缓慢，耐心等待~
+> 图床使用：GitHub+jsdelivr
 >
 > 欢迎fork使用✨，一起交流学习
+>
+> 感谢你的使用，觉得可以的话，可不可以给个免费的star✨
 
 
 
@@ -34,11 +36,11 @@
 - 绿化完成点击桌面图标启动
 - 拖动apk文件到模拟器窗口完成app的安装
 
-![](https://i.loli.net/2020/07/18/Q5ikyFsXA1gpOz6.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/安装雷神模拟器.png)
 
-![](https://i.loli.net/2020/07/18/GSpQnEM7Jfx8OaK.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/雷神模拟器设置.png)
 
-![](https://i.loli.net/2020/07/18/Y7xnzh24se8f6WX.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/安装apk文件.png)
 
 #### 2、httpcanary的配置及使用
 
@@ -46,11 +48,11 @@
 - 安装证书并移动到根目录
 - 设置目标应用为完美校园APP（就不需要其余操作了，不要点右下角的小飞机）
 
-![](https://i.loli.net/2020/07/18/VYSIl7DLqkb3w1x.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/合成1.png)
 
-![](https://i.loli.net/2020/07/18/CsNoFP2nBJQH6Df.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/合成2.png)
 
-![](https://i.loli.net/2020/07/18/1NUEcpAITgt9eMm.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/合成3.png)
 
 #### 3、开始抓包
 
@@ -59,7 +61,7 @@
 - 切换完美校园提交信息，打卡成功
 - 切换httpcanary，停止抓包
 
-![](https://i.loli.net/2020/07/18/Lw5SOp1R9oeV4YQ.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/合成4.png)
 
 #### 4、抓包分析
 
@@ -69,7 +71,7 @@
 - 点击响应一栏，并在底部选择text，即可查看响应结果（成功则为打卡成功，打卡频繁则失败）
 - 至此我们就获得了我们绝大多数的数据了（下面项目使用的数据填写需要）
 
-![](https://i.loli.net/2020/07/18/EczZY21WAQdgs5N.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/合成5.png)
 
 
 
@@ -87,15 +89,15 @@
 - 测试一下是否能推送成功，并复制下自己的SCKEY（下面项目使用的数据填写需要）
 - 至此我们就获得了我们的最后一个数据，接下来就是了解如何使用此项目文件了
 
-![](https://i.loli.net/2020/07/18/LReTUqoZNirdX12.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/Server1.png)
 
-![](https://i.loli.net/2020/07/18/wvR9UjQum4OeyJM.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/Server2.png)
 
-![](https://i.loli.net/2020/07/18/Pjkzg1i6hdIbWnH.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/Server3.png)
 
-![](https://i.loli.net/2020/07/18/hj8q7flIvW4mwbE.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/Server4.png)
 
-![](https://i.loli.net/2020/07/18/kuMFjAKB45fWS6s.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/Server5.png)
 
 ### 三、项目fork与部署
 
@@ -105,15 +107,15 @@
 
 - 点击右上角的fork即可将项目文件拉到自己的库中
 
-![](https://i.loli.net/2020/07/18/FCA6SNqcLyBg8Qe.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/fork.png)
 
-![](https://i.loli.net/2020/07/18/COrWqn8BcXZP6GT.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/fork2.png)
 
 #### 2、设置Secrets，输入项目运行的数据
 
 - 找到自己fork的库，点击Settings->Secrets->New sceret
 
-- 字段名使用大写，下面的值则填写自己的值，总共12个，细心填写这关乎之后的成功与否
+- 字段名使用大写，下面的值则填写自己的值(不要回车,干净利落的填写就可)，总共12个，细心填写这关乎之后的成功与否
 
 - ```
   # 设置如下secret字段
@@ -133,11 +135,11 @@
   """
   ```
 
-![](https://i.loli.net/2020/07/18/vSkAs1hP6NU2Dce.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/secrets.png)
 
-![](https://i.loli.net/2020/07/18/l6PTUNbJIMDGA4O.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/secrets2.png)
 
-![](https://i.loli.net/2020/07/18/5tNdbimDaqIUgYZ.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/secrets3.png)
 
 #### 3、开启Actions
 
@@ -145,15 +147,15 @@
 
 - 回到项目主页，修改README.md触发Actions
 
-![](https://i.loli.net/2020/07/18/HjxTdCnhuAgLqXy.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/action1.png)
 
-![](https://i.loli.net/2020/07/18/ZbcJ7LlhDgqtaId.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions2.png)
 
-![](https://i.loli.net/2020/07/18/v9WufB8Znhk3wSt.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions3.png)
 
-![](https://i.loli.net/2020/07/18/p7nj4ZAbId9cRSh.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions4.png)
 
-![](https://i.loli.net/2020/07/18/l87JNvr9fHceugU.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions5.png)
 
 #### 4、查看结果
 
@@ -162,9 +164,9 @@
 - 成功了一次之后则开启了自动化部署（每天早上六点自动打卡）
 - 如果失败，则在运行状况的HealthCheckin中查看报错情况，解决不了可以提issue
 
-![](https://i.loli.net/2020/07/18/OVmruRa6dIpqZfA.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/sucess.png)
 
-<img src="https://i.loli.net/2020/07/18/xGCrN6tdFBSiZgh.jpg" style="zoom:25%;" />
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/sucess1.png)
 
 ### 四、Actions具体流程
 
@@ -259,4 +261,10 @@ run: |
     EOF
 ```
 
-> 感谢你的使用，觉得可以的话，可不可以给个免费的star✨
+### 五、赞赏
+
+如果你觉得该教程写得还可以且有帮到你的话，欢迎给我打赏一杯奶茶~~
+
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/微信.png)
+
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/支付宝.png)
