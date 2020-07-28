@@ -4,6 +4,7 @@ import json
 import requests
 
 
+# 健康打卡的URL地址
 check_url = "https://reportedh5.17wanxiao.com/sass/api/epmpics"
 
 text = input()
@@ -24,6 +25,7 @@ area = {'address': address, 'text': addtext, 'code': code}
 
 areaStr = json.dumps(area, ensure_ascii=False)
 
+# POST提交的json字段，根据自己的修改
 jsons = {"businessType": "epmpics", "method": "submitUpInfo",
         "jsonData": {"deptStr": {"deptid": deptId, "text": text},
                      "areaStr": areaStr,
@@ -45,6 +47,7 @@ jsons = {"businessType": "epmpics", "method": "submitUpInfo",
                                                            "value": emergencyPhone}], "gpsType": 0}}
 
 response = requests.post(check_url, json=jsons)
+# 以json格式打印json字符串
 res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
 print(res)
 
