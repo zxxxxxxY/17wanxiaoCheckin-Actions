@@ -6,7 +6,7 @@
 >
 > 每天早上六点自动打卡，微信推送打卡信息
 >
-> 图床使用：GitHub+jsdelivr
+> 图床使用：GitHub+jsdelivr   图片过多可能加载缓慢
 >
 > 欢迎fork使用✨，一起交流学习
 >
@@ -22,7 +22,9 @@
 
 3、GitHub Actions自动化部署Python脚本
 
-4、......
+4、清空GitHub的commit记录(新建分支，重命名分支，不更改文件)
+
+5、......
 
 ## 复杂的食用方法
 
@@ -155,8 +157,6 @@
 
 ![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions4.png)
 
-![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions5.png)
-
 #### 4、查看结果
 
 - 通过Update README.md -- > build -- > HealthCheckin
@@ -164,9 +164,11 @@
 - 成功了一次之后则开启了自动化部署（每天早上六点自动打卡）
 - 如果失败，则在运行状况的HealthCheckin中查看报错情况，解决不了可以提issue
 
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/actions5.png)
+
 ![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/sucess.png)
 
-![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/sucess1.png)
+![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/sucess1.jpg)
 
 ### 四、Actions具体流程
 
@@ -261,10 +263,35 @@ run: |
     EOF
 ```
 
-### 五、赞赏
+### 五、清空Commit记录
+
+> 可能由于大家测试填写自己的数据进入py文件中，会在commit记录中出现
+>
+> 为了保护自己的信息，应该清楚commit记录
+
+1、在自己电脑桌面新建一个文件夹(默认你已安装git)
+
+2、进入文件夹，右键点击 Git Bash Here，依次运行如下命令
+
+```
+git init
+git clone git@github.com:.../17wanxiaoCheckin-Actions.git(你项目的ssh地址)
+```
+
+3、进入克隆之后的文件夹，右键点击 Git Bash Here，依次运行如下命令即可
+
+```
+git checkout --orphan newBranch
+git add -A  # Add all files and commit them
+git commit -am "change"
+git branch -D master  # Deletes the master branch
+git branch -m master  # Rename the current branch to master
+git push -f origin master  # Force push master branch to github
+git gc --aggressive --prune=all     # remove the old files
+```
+
+### 六、赞赏
 
 如果你觉得该教程写得还可以且有帮到你的话，欢迎给我打赏一杯奶茶~~
 
-![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/微信.png)
-
-![](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/支付宝.png)
+<img src="https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/支付宝.jpg" width="400"/><img src="https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/微信.png" width="400"/>
