@@ -267,7 +267,7 @@ run: |
 
 > 可能由于大家测试填写自己的数据进入py文件中，会在commit记录中出现
 >
-> 为了保护自己的信息，应该清楚commit记录
+> 为了保护自己的信息，应该清除commit记录
 
 1、在自己电脑桌面新建一个文件夹(默认你已安装git)
 
@@ -294,4 +294,4 @@ git gc --aggressive --prune=all     # remove the old files
 
 如果你觉得该教程写得还可以且有帮到你的话，欢迎给我打赏一杯奶茶~~
 
-<img src="https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/支付宝.jpg" width="400"/><img src="https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/微信.png" width="400"/>
+<img src="https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/支付宝.jpg" width="300"/><img src="https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin-Actions/Pictures/微信.png" width="300"/>
